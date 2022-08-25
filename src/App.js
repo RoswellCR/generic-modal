@@ -1,10 +1,16 @@
 
+import openModal from "./components/opdenModal";
 
 function App() {
+  
+  function handleOpenModal(){
+    openModal();
+  }
+  
   return (
     
         <div>
-          <h1>Hola Mundo</h1>
+          <button onClick={handleOpenModal}>Open Modal</button>
         </div>
     
   );
